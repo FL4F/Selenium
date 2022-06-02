@@ -17,6 +17,7 @@ cotacao_euro = navegador.find_element(By.XPATH, '//*[@id="knowledge-currency__up
 print(cotacao_euro)
 
 navegador.get('https://www.melhorcambio.com/ouro-hoje')
+
 cotacao_ouro = navegador.find_element(By.XPATH,'//*[@id="comercial"]').get_attribute('value')
 cotacao_ouro = cotacao_ouro.replace(',','.')
 print(cotacao_ouro)
